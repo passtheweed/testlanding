@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: none;
+}
+.tiktok {
+    size: 20px;
+}
+.social-icons {
+    margin-top: 0;
+    color: #fff;
+    font-size: 28px;
+    transition: 0.2s ease-in-out;
+    padding: 0 2px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -63px;
+    transform: scale(0);
+    transition: ease-in-out 150ms;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transform: scale(1);
+}
+.social-icons:hover {
+    transform: scale(1.1);
+}
+.social-icons:hover {
+    transform: scale(1.1);
+}
+.badge {
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+.badge .badge-tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(29, 29, 31, 0.575);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.badge .badge-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent;
+}
+.badge:hover .badge-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.ranks {
+    animation: cottoncandy 3s infinite;
+}
+@keyframes cottoncandy {
+    0% {
+        color: #b47de8;
+    }
+    10% {
+        color: #e88a7d;
+    }
+    20% {
+        color: #e8977d;
+    }
+    30% {
+        color: #e8a47d;
+    }
+    40% {
+        color: #e8b07d;
+    }
+    50% {
+        color: #e8bd7d;
+    }
+    60% {
+        color: #e8ca7d;
+    }
+    70% {
+        color: #e8d77d;
+    }
+    80% {
+        color: #af7de8;
+    }
+    90% {
+        color: #e47de8;
+    }
+    100% {
+        color: #b47de8;
+    }
+}
+.rgb {
+    animation: rainbow-text 5s infinite;
+}
+@keyframes rainbow-text {
+    0% {
+        color: #e87d7d;
+    }
+    2% {
+        color: #e88a7d;
+    }
+    4% {
+        color: #e8977d;
+    }
+    6% {
+        color: #e8a47d;
+    }
+    8% {
+        color: #e8b07d;
+    }
+    10% {
+        color: #e8bd7d;
+    }
+    12% {
+        color: #e8ca7d;
+    }
+    14% {
+        color: #e8d77d;
+    }
+    16% {
+        color: #e8e47d;
+    }
+    18% {
+        color: #dfe87d;
+    }
+    20% {
+        color: #d3e87d;
+    }
+    22% {
+        color: #c6e87d;
+    }
+    24% {
+        color: #b9e87d;
+    }
+    26% {
+        color: #ace87d;
+    }
+    28% {
+        color: #9fe87d;
+    }
+    30% {
+        color: #92e87d;
+    }
+    32% {
+        color: #86e87d;
+    }
+    34% {
+        color: #7de881;
+    }
+    36% {
+        color: #7de88e;
+    }
+    38% {
+        color: #7de89b;
+    }
+    40% {
+        color: #7de8a8;
+    }
+    42% {
+        color: #7de8b5;
+    }
+    44% {
+        color: #7de8c1;
+    }
+    46% {
+        color: #7de8ce;
+    }
+    48% {
+        color: #7de8db;
+    }
+    50% {
+        color: #7de8e8;
+    }
+    52% {
+        color: #7ddbe8;
+    }
+    54% {
+        color: #7dcee8;
+    }
+    56% {
+        color: #7dc1e8;
+    }
+    58% {
+        color: #7db5e8;
+    }
+    60% {
+        color: #7da8e8;
+    }
+    62% {
+        color: #7d9be8;
+    }
+    64% {
+        color: #7d8ee8;
+    }
+    66% {
+        color: #7d81e8;
+    }
+    68% {
+        color: #867de8;
+    }
+    70% {
+        color: #927de8;
+    }
+    72% {
+        color: #9f7de8;
+    }
+    74% {
+        color: #ac7de8;
+    }
+    76% {
+        color: #b97de8;
+    }
+    78% {
+        color: #c67de8;
+    }
+    80% {
+        color: #d37de8;
+    }
+    82% {
+        color: #df7de8;
+    }
+    84% {
+        color: #e87de4;
+    }
+    86% {
+        color: #e87dd7;
+    }
+    88% {
+        color: #e87dca;
+    }
+    90% {
+        color: #e87dbd;
+    }
+    92% {
+        color: #e87db0;
+    }
+    94% {
+        color: #e87da4;
+    }
+    96% {
+        color: #e87d97;
+    }
+    98% {
+        color: #e87d8a;
+    }
+    100% {
+        color: #e87d7d;
+    }
+}
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px); /* Adjust the value as needed */
+    z-index: -1;
+  }
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
+}
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #11111120;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    z-index: 9999;
+    transition: ease-in 0.5s;
+}
+.popup-message:hover {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8), 0px 0px 20px 10prgba(255, 255, 255, 0.6), 0px 0px 30px 15px rgba(255, 255, 255, 0.4);
+    opacity: 0.8;
+}
+
+
+.background-image {
+  background-image: url("res/vids/video.mp4");
+}
+
+* {
+     margin: 0;
+     padding: 0 
+}
+ html {
+     background-attachment: fixed;
+     height: 100% 
+}
+ body {
+     font-family: poppins,sans-serif;
+     color: #fff;
+     background-size: cover 
+}
+ @font-face {
+     font-family: king;
+     src: url(../fonts/Kingslayer.html) 
+}
+ @font-face {
+     font-family: strange;
+     src: url(../fonts/Strange.html\ Piece.ttf) 
+}
+ @font-face {
+     font-family: hacka;
+     src: url(../fonts/Modeseven-L3n5.html) 
+}
+ @font-face {
+     font-family: old;
+     src: url(../fonts/BALLT___.html) 
+}
+ @font-face {
+     font-family: digital;
+     src: url(../fonts/MINISKAP.html) 
+}
+ @font-face {
+     font-family: buble;
+     src: url(../fonts/BLOBBYCHUG.html) 
+}
+ .center {
+     display: none;
+     margin: 0 auto;
+     text-align: center;
+     margin-top: -60px 
+} 
+
+ i {
+     font-size: 20px;
+     margin-right: 5px 
+}
+.pfp-image {
+     animation: down 2s;
+     border-radius: 100%;
+     border: 5px solid #085f0200;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 170px;
+     max-width: 170px;
+     height: 170px;
+}
+.pfp-image:hover {
+    transition: ease-out;
+    transition-duration: 300ms;
+    transform: scale(1.1);
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8), 0px 0px 20px 10px rgba(255, 255, 255, 0.6), 0px 0px 30px 15px rgba(255, 255, 255, 0.4);
+}
+ .username {
+     animation: up 2s;
+     font-size: 24px;
+     margin-top: 4px;
+     font-weight: 700 
+}
+ .bio-text {
+     font-size: 16px;
+     margin-top: 8px;
+     animation: up 2s;
+     font-weight: 500;
+     color: #f1f1f1bd 
+}
+ .flex-display {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 9px 1px;
+     border: 1px solid gray;
+     width: 50%;
+     margin: auto;
+     border-radius: 20rem;
+     margin-top: 20px;
+     cursor: pointer 
+}
+ .disc {
+     font-size: 16px;
+     margin-right: 5px;
+     color: #f40347;
+     text-shadow: #f40347 0 0 9px 
+}
+ .img-class {
+     animation: up 2s;
+     max-width: 100%;
+     max-height: 100%;
+     width: auto;
+     height: auto 
+}
+ .btn-link {
+     animation: up 2s;
+     padding: 16px 44px;
+     width: 95%;
+     text-align: center;
+     background-color: #0d0d0e;
+     border: 0 solid #1c1c1c;
+     border-radius: 8px;
+     -webkit-box-shadow: 0 0 17px 1px rgba(0,0,0,.57);
+     -moz-box-shadow: 0 0 17px 1px rgba(0,0,0,.57);
+     box-shadow: 0 0 17px 1px rgba(0,0,0,.57);
+     cursor: pointer;
+     color: #a7a7a7;
+     transition: transform .25s ease,color .25s ease,background-color .25s ease,border-color .25s ease;
+     margin-bottom: 22px;
+     font-weight: 400;
+     font-family: poppins 
+}
+ .btn-link:hover {
+     -webkit-box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
+     -moz-box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
+     box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
+     transform: scale(.95) 
+}
+ .btn-link:active {
+     transform: scale(.92) 
+}
+color {
+    width: 150px;
+    height: 150px;
+    background: -webkit-linear-gradient(90deg, #ffffff 0%, #a5a5a5 33%,#3b3b3b 100%);
+    background-clip: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+color:hover {
+    text-shadow: rgb(255, 255, 255) 1px 0 5px;
+    transition: .8s ease;
+}
+.sparkle {
+background-image: url(../imgs/sparkle.gif) 
+}
+nigga:hover {
+text-shadow: rgb(255, 255, 255) 1px 0 5px;
+transition: .8s ease
+}
+
+ .mark {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+     font-weight: 700 
+}
+ .mark:hover {
+     text-decoration: underline 
+}
+ .background {
+     padding: 80px 0 
+}
+
+ @keyframes fadein {
+     from {
+         opacity: 0 
+    }
+     to {
+         opacity: 1 
+    }
+}
+ @-moz-keyframes fadein {
+     from {
+         opacity: 0 
+    }
+     to {
+         opacity: 1 
+    }
+}
+ @-webkit-keyframes fadein {
+     from {
+         opacity: 0 
+    }
+     to {
+         opacity: 1 
+    }
+}
+ @-ms-keyframes fadein {
+     from {
+         opacity: 0 
+    }
+     to {
+         opacity: 1 
+    }
+}
+.color0 {
+    animation: color0 2s infinite;
+}
+@keyframes color0 {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    50% {
+        color: rgb(89, 89, 89);
+    }
+    100% {
+        color: #000000;
+    }
+
+    
+    
+}
+
+.owner {
+    animation: owner 2s infinite;
+}
+@keyframes owner {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    50% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: #000000;
+    }
+
+    
+    
+}
+#click-to-enter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 998;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  pointer-events: none;
+  animation: cursor-color 10s linear infinite;
+}
+
+@keyframes cursor-color {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  50% {
+    background-color: rgb(255, 255, 255);
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+#click-to-enter {
+  opacity: 1;
+  transition: opacity 1s ease;
+  animation: rgb 3s infinite;
+}
+
+#click-to-enter.fade {
+  opacity: 0;
+  
+}
+a{
+    size: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 25px 25px;
+    margin: 40px 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2  px;
+    overflow: hidden;
+   
+}
+a:hover{
+    background: rgb(255, 255, 255);
+    color: #fff;
+    box-shadow: 0 0 5px rgb(255, 255, 255),
+                0 0 25px rgb(255, 255, 255),
+                0 0 50px rgb(255, 255, 255),
+                0 0 200px rgb(255, 255, 255);
+}
+
+a span{
+    position: relative;
+    display: block;
+}
+.badge { 
+  height:25px;
+}
